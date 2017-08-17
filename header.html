@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>京东主页</title>
+		
+		<link rel="stylesheet" href="css/base.css"/>
+		<link rel="stylesheet" href="css/index.css"/>
+		<script type="text/javascript">
+			function divcut(id) {
+				var value = document.getElementById("tabcard_content" + id);
+				value.style.display = "block";
+				for (var i = 1; i <= 2; i++) {
+					if (i == id) {
+						continue;
+					}
+					value = document.getElementById("tabcard_content" + i);
+					value.style.display = "none";
+				}
+		
+				value = document.getElementById("tabcard_menu" + id);
+				value.style.border = "1px solid #b0b0b0";
+				value.style.borderBottomWidth = "0px";
+				for (var i = 1; i <= 2; i++) {
+					if (i == id) {
+						continue;
+					}
+					value = document.getElementById("tabcard_menu" + i);
+					value.style.borderWidth = "0px";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="shortcut">
+			<div class="sc-content wwd">				
+				<img src="img/loca_bg.png" />
+				<span>北京</span>				
+				<ul>
+					<li><a href="">你好，请登录</a>  &nbsp;<a href="">免费注册</a></li>
+					<li><a href="">我的订单</a><div class="line"></div></li>
+					<li><a href="">我的京东<img src="img/more_unfold (2).png"/></a><div class="line"></div></li>
+					<li><a href="">京东会员</a><div class="line"></div></li>
+					<li><a href="">企业采购</a><div class="line"></div></li>
+					<li><a href="">客户服务<img src="img/more_unfold (2).png"></a><div class="line"></div></li>
+					<li><a href="">网站导航<img src="img/more_unfold (2).png"></a><div class="line"></div></li>
+					<li><a href="">手机京东</a><div class="line"></div></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header">
+			<div class="header-content wwd">
+				<img src="img/logo.v2.png"/>
+				<div class="search">
+					<input type="text" />
+					<button><i></i></button>
+				</div>
+				<div class="shopcar">
+					<img src="img/cart.png" />
+					<a href="#">我的购物车</a>
+					<span>0</span>
+				</div>
+				<div class="hotword">
+					<ul>
+						<li class="red-word"><a href=""><span>3件7折</span></a></li>
+						<li><a href=""><span>手机专场</span></a></li>
+						<li><a href=""><span>农用物资</span></a></li>
+						<li><a href=""><span>男装品类日</span></a></li>
+						<li><a href=""><span>领券狂减</span></a></li>
+						<li><a href=""><span>针织衫男</span></a></li>
+						<li><a href=""><span>卫生巾</span></a></li>
+						<li><a href=""><span>大白水</span></a></li>
+						<li><a href=""><span>拖鞋</span></a></li>
+					</ul>
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href=""><span>秒杀</span></a></li>
+						<li><a href=""><span>优惠券</span></a></li>
+						<li><a href=""><span>闪购</span></a></li>
+						<li><a href=""><span>拍卖</span></a><div></div></li>
+					</ul>
+					<ul>
+						<li><a href=""><span>服装城</span></a></li>
+						<li><a href=""><span>京东超市</span></a></li>
+						<li><a href=""><span>生鲜</span></a></li>
+						<li><a href=""><span>全球购</span></a><div></div></li>
+					</ul>
+					<ul>
+						<li><a href=""><span>京东金融</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content wwd">
+			<div class="content_left">
+				<ul>
+					<li><a href="#"><span>家用电器</span></a></li>
+					<li><a href="#"><span>手机</span></a><span>/</span><a href="#"><span>运营商</span></a><span>/</span><a href="#"><span>数码</span></a></li>
+					<li><a href="#"><span>电脑</span></a><span>/</span><a href="#"><span>办公</span></a></li>
+					<li><a href="#"><span>家居</span></a><span>/</span><a href="#"><span>家具</span></a><span>/</span><a href="#"><span>家装</span></a><span>/</span><a href="#"><span>厨具</span></a></li>
+					<li><a href="#"><span>男装</span></a><span>/</span><a href="#"><span>女装</span></a><span>/</span><a href="#"><span>童装</span></a><span>/</span><a href="#"><span>内衣</span></a></li>
+					<li><a href="#"><span>美妆个护</span></a><span>/</span><a href="#"><span>清洁用品</span></a><span>/</span><a href="#"><span>宠物</span></a></li>
+					<li><a href="#"><span>鞋靴</span></a><span>/</span><a href="#"><span>箱包</span></a><span>/</span><a href="#"><span>珠宝</span></a><span>/</span><a href="#"><span>奢侈品</span></a></li>
+					<li><a href="#"><span>运动</span></a><span>/</span><a href="#"><span>钟表</span></a><span>/</span><a href="#"><span>户外</span></a></li>
+					<li><a href="#"><span>汽车</span></a><span>/</span><a href="#"><span>汽车用品</span></a></li>
+					<li><a href="#"><span>母婴</span></a><span>/</span><a href="#"><span>玩具乐器</span></a></li>
+					<li><a href="#"><span>食品</span></a><span>/</span><a href="#"><span>酒类</span></a><span>/</span><a href="#"><span>生鲜</span></a><span>/</span><a href="#"><span>特产</span></a></li>
+					<li><a href="#"><span>医药保健</span></a></li>
+					<li><a href="#"><span>图书</span></a><span>/</span><a href="#"><span>音像</span></a><span>/</span><a href="#"><span>电子书</span></a></li>
+					<li><a href="#"><span>机票</span></a><span>/</span><a href="#"><span>酒店</span></a><span>/</span><a href="#"><span>旅游</span></a><span>/</span><a href="#"><span>生活</span></a></li>
+					<li><a href="#"><span>理财</span></a><span>/</span><a href="#"><span>众筹</span></a><span>/</span><a href="#"><span>白条</span></a><span>/</span><a href="#"><span>保险</span></a></li>
+				</ul>
+			</div>
+			<div class="content_center">
+				<a class="img1" href="#"><img src="img/ban8.jpg" alt="" /></a>
+				<a class="img2" href="#"><img src="img/banner1.jpg" alt="" /></a>
+				<a class="img3" href="#"><img src="img/banner2.jpg" alt="" /></a>
+			</div>
+			<div class="content_right">
+				<div class="cr_login">
+					<div class="img"><a href="#"><img src="img/no_login.jpg"></a></div>
+					<div class="wel">Hi,欢迎来到京东!</div>
+					<div class="login-regis"><a href="#">登录</a><a href="#">注册</a></div>
+					<div class="new_man"><a href="#"><span>新人福利</span></a></div>
+					<div class="vip"><a href="#"><span>PLUS会员</span></a></div>
+				</div>
+				<div class="cr_tab">
+					<div class="tabcard_frame" style="height: 500px;">
+		<div class="tabcard_frame_dir">
+			<div id="tabcard_menu1" class="tabcard_frame_menu1" onmouseover="divcut(1)">促销</div>
+			<div id="tabcard_menu2" class="tabcard_frame_menu2" onmouseover="divcut(2)">公告</div>
+			<div class="tab_more"><a href="#">更多</a></div>
+		</div>
+		<div id="tabcard_content1" class="tabcard_frame_content1">
+			<ul>
+				<li><a href="#"><span>Macbook最高返50000京豆</span></a></li>
+				<li><a href="#"><span>抢百元优惠券，享4.22%活期</span></a></li>
+				<li><a href="#"><span>春季家装季，家电买一送一</span></a></li>
+				<li><a href="#"><span>每日享折扣 京东品质游</span></a></li>
+			</ul>
+		</div>
+		<div id="tabcard_content2"class="tabcard_frame_content2">
+			<ul>
+				<li><a href="#"><span>京东与三大国际腕表品牌签约</span></a></li>
+				<li><a href="#"><span>京东成为中国最大家电零售商</span></a></li>
+				<li><a href="#"><span>京东自营家电清洗服务上线</span></a></li>
+				<li><a href="#"><span>京东帮服务店突破1700家</span></a></li>
+			</ul>
+		</div>
+	</div>
+				</div>
+				<div class="cr_table">
+					<div>
+						<ul>
+							<li><a href="#"><i></i><span>话费</span></a></li>
+							<li><a href="#"><i></i><span>机票</span></a></li>
+							<li><a href="#"><i></i><span>酒店</span></a></li>
+							<li class="none_rg"><a href="#"><i></i><span>游戏</span></a></li>
+							<li><a href="#"><i></i><span>企业购</span></a></li>
+							<li><a href="#"><i></i><span>加油卡</span></a></li>
+							<li><a href="#"><i></i><span>电影票</span></a></li>
+							<li class="none_rg"><a href="#"><i></i><span>火车票</span></a></li>
+							<li><a href="#"><i></i><span>众筹</span></a></li>
+							<li><a href="#"><i></i><span>理财</span></a></li>
+							<li><a href="#"><i></i><span>礼品卡</span></a></li>
+							<li class="none_rg"><a href="#"><i></i><span>白条</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
